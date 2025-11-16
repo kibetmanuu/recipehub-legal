@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecipeHub - Privacy Policy & Terms of Service</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #FF6B35 0%, #FF8C42 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .nav {
+            background: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav a {
+            color: #FF6B35;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .nav a:hover {
+            background: #FFF3F0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        h2 {
+            color: #FF6B35;
+            margin: 2rem 0 1rem;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #FF6B35;
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            color: #333;
+            margin: 1.5rem 0 0.8rem;
+            font-size: 1.3rem;
+        }
+
+        h4 {
+            color: #555;
+            margin: 1rem 0 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        p, li {
+            margin-bottom: 0.8rem;
+            color: #555;
+        }
+
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        th, td {
+            padding: 0.8rem;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background: #FF6B35;
+            color: white;
+        }
+
+        .last-updated {
+            background: #FFF3F0;
+            padding: 1rem;
+            border-left: 4px solid #FF6B35;
+            margin-bottom: 2rem;
+            border-radius: 5px;
+        }
+
+        .contact-box {
+            background: #F0F7FF;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            border-left: 4px solid #4A90E2;
+        }
+
+        .warning {
+            background: #FFF3CD;
+            border-left: 4px solid #FFA000;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .footer a {
+            color: #FF8C42;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .nav {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🍳 RecipeHub</h1>
+        <p>Your Personal Recipe Discovery Assistant</p>
+    </div>
+
+    <div class="nav">
+        <a href="#home" onclick="showSection('home')">Home</a>
+        <a href="#privacy" onclick="showSection('privacy')">Privacy Policy</a>
+        <a href="#terms" onclick="showSection('terms')">Terms of Service</a>
+        <a href="#contact" onclick="showSection('contact')">Contact</a>
+    </div>
+
+    <div class="container">
+        <!-- HOME SECTION -->
+        <div id="home" class="section active">
+            <div class="card">
+                <h2>Welcome to RecipeHub Legal Documents</h2>
+                <p>This page contains the Privacy Policy and Terms of Service for the RecipeHub mobile application.</p>
+                
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#privacy" onclick="showSection('privacy')">Privacy Policy</a> - How we collect, use, and protect your data</li>
+                    <li><a href="#terms" onclick="showSection('terms')">Terms of Service</a> - Rules and guidelines for using RecipeHub</li>
+                    <li><a href="#contact" onclick="showSection('contact')">Contact Us</a> - Get in touch with our team</li>
+                </ul>
+
+                <div class="last-updated">
+                    <strong>Last Updated:</strong> November 17, 2025
+                </div>
+
+                <h3>About RecipeHub</h3>
+                <p>RecipeHub is a mobile application that helps you discover, save, and organize recipes. Our app provides:</p>
+                <ul>
+                    <li>🔍 Smart recipe search powered by Spoonacular API</li>
+                    <li>💾 Offline access to saved recipes</li>
+                    <li>⭐ Personalized recipe recommendations</li>
+                    <li>📱 Beautiful, user-friendly interface</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- PRIVACY POLICY SECTION -->
+        <div id="privacy" class="section">
+            <div class="card">
+                <h2>Privacy Policy</h2>
+                <div class="last-updated">
+                    <strong>Last Updated:</strong> November 17, 2025
+                </div>
+
+                <h3>Introduction</h3>
+                <p>RecipeHub ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application RecipeHub (the "App").</p>
+                <p><strong>By using RecipeHub, you agree to the collection and use of information in accordance with this policy.</strong></p>
+
+                <h3>1. Information We Collect</h3>
+                
+                <h4>1.1 Information You Provide</h4>
+                <ul>
+                    <li><strong>Search queries:</strong> Recipe searches and filters you apply</li>
+                    <li><strong>Saved recipes:</strong> Recipes you bookmark or save for later</li>
+                    <li><strong>Preferences:</strong> Dietary preferences, cuisine types, and app settings</li>
+                    <li><strong>User-generated content:</strong> Notes, ratings, or comments you add</li>
+                </ul>
+
+                <h4>1.2 Automatically Collected Information</h4>
+                <ul>
+                    <li><strong>Usage data:</strong> Features used, recipes viewed, time spent</li>
+                    <li><strong>Device information:</strong> Device type, OS version, unique identifiers</li>
+                    <li><strong>Performance data:</strong> App crashes, response times, technical errors</li>
+                    <li><strong>API usage metrics:</strong> How often you access recipe data</li>
+                    <li><strong>Cache data:</strong> Locally stored recipe information</li>
+                </ul>
+
+                <h4>1.3 Third-Party Services</h4>
+                <ul>
+                    <li><strong>Firebase Analytics:</strong> Anonymous usage statistics</li>
+                    <li><strong>Firebase Crashlytics:</strong> Crash reports and diagnostics</li>
+                    <li><strong>Spoonacular API:</strong> Recipe data retrieval</li>
+                    <li><strong>Google Play Services:</strong> App distribution and updates</li>
+                </ul>
+
+                <h3>2. How We Use Your Information</h3>
+                
+                <h4>Core Functionality</h4>
+                <ul>
+                    <li>Provide recipe search and discovery features</li>
+                    <li>Save and sync your favorite recipes</li>
+                    <li>Personalize recipe recommendations</li>
+                    <li>Enable offline access through cached data</li>
+                </ul>
+
+                <h4>Service Improvement</h4>
+                <ul>
+                    <li>Analyze usage patterns to improve the app</li>
+                    <li>Monitor and fix technical issues and crashes</li>
+                    <li>Optimize API usage and app performance</li>
+                    <li>Develop new features based on user behavior</li>
+                </ul>
+
+                <h3>3. Data Sharing and Disclosure</h3>
+                
+                <div class="warning">
+                    <strong>⚠️ WE DO NOT SELL YOUR PERSONAL INFORMATION</strong><br>
+                    We will never sell, rent, or trade your personal information to third parties for marketing purposes.
+                </div>
+
+                <h4>Third-Party Service Providers</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Purpose</th>
+                            <th>Data Shared</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Firebase (Google)</td>
+                            <td>Analytics, crash reporting</td>
+                            <td>Usage data, device info</td>
+                        </tr>
+                        <tr>
+                            <td>Spoonacular API</td>
+                            <td>Recipe data retrieval</td>
+                            <td>Search queries (no personal data)</td>
+                        </tr>
+                        <tr>
+                            <td>Google Play Services</td>
+                            <td>App distribution</td>
+                            <td>Device info, download data</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>4. Data Security</h3>
+                <p>We implement industry-standard security measures:</p>
+                <ul>
+                    <li>🔒 <strong>Encryption:</strong> All data transmitted is encrypted using HTTPS/TLS</li>
+                    <li>💾 <strong>Secure storage:</strong> Local data is stored securely on your device</li>
+                    <li>🛡️ <strong>Firebase Security:</strong> Cloud data protected with access controls</li>
+                    <li>🔑 <strong>API protection:</strong> API keys are secured and rotated regularly</li>
+                </ul>
+
+                <h3>5. Your Rights and Choices</h3>
+                <ul>
+                    <li><strong>Access:</strong> View your saved recipes and preferences</li>
+                    <li><strong>Update:</strong> Modify or delete your preferences anytime</li>
+                    <li><strong>Delete:</strong> Clear all data through app settings or uninstall</li>
+                    <li><strong>Opt-out:</strong> Disable Firebase Analytics in settings</li>
+                </ul>
+
+                <h3>6. Children's Privacy</h3>
+                <div class="warning">
+                    <strong>⚠️ IMPORTANT</strong><br>
+                    RecipeHub is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13.
+                </div>
+
+                <h3>7. Data Retention</h3>
+                <ul>
+                    <li><strong>Saved recipes:</strong> Stored until you clear or uninstall</li>
+                    <li><strong>Usage analytics:</strong> Retained for up to 14 months</li>
+                    <li><strong>Crash logs:</strong> Retained for 90 days</li>
+                    <li><strong>Cache data:</strong> Automatically cleared after 7 days</li>
+                </ul>
+
+                <h3>8. International Data Transfers</h3>
+                <p>Your information may be transferred to and processed in:</p>
+                <ul>
+                    <li><strong>United States:</strong> Firebase and Google services</li>
+                    <li><strong>Europe:</strong> Spoonacular API servers</li>
+                </ul>
+                <p>We ensure appropriate safeguards are in place (GDPR compliant).</p>
+
+                <h3>9. Changes to This Policy</h3>
+                <p>We may update this Privacy Policy from time to time. We will notify you by posting the new policy in the app and updating the "Last Updated" date.</p>
+
+                <div class="contact-box">
+                    <h4>📧 Contact Us About Privacy</h4>
+                    <p><strong>Email:</strong> privacy@recipehub.com</p>
+                    <p><strong>Response Time:</strong> Within 30 days</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- TERMS OF SERVICE SECTION -->
+        <div id="terms" class="section">
+            <div class="card">
+                <h2>Terms of Service</h2>
+                <div class="last-updated">
+                    <strong>Last Updated:</strong> November 17, 2025
+                </div>
+
+                <h3>Introduction</h3>
+                <p>Welcome to RecipeHub! These Terms of Service ("Terms") govern your use of the RecipeHub mobile application.</p>
+                <p><strong>By using RecipeHub, you agree to these Terms. If you don't agree, please don't use the app.</strong></p>
+
+                <h3>1. Acceptance of Terms</h3>
+                <p>By downloading or using RecipeHub, you:</p>
+                <ul>
+                    <li>Confirm you are at least 13 years old</li>
+                    <li>Agree to comply with these Terms and all applicable laws</li>
+                    <li>Acknowledge you have read our Privacy Policy</li>
+                </ul>
+
+                <h3>2. License to Use</h3>
+                <p>RecipeHub grants you a <strong>personal, non-exclusive, non-transferable</strong> license to use the app for personal cooking and recipe discovery.</p>
+
+                <h4>You MAY:</h4>
+                <ul>
+                    <li>✅ Use the app for personal, non-commercial purposes</li>
+                    <li>✅ Save and organize recipes</li>
+                    <li>✅ Share recipes with friends and family</li>
+                </ul>
+
+                <h4>You may NOT:</h4>
+                <ul>
+                    <li>❌ Sell, rent, or sublicense the app</li>
+                    <li>❌ Reverse engineer or decompile</li>
+                    <li>❌ Use for commercial purposes without permission</li>
+                    <li>❌ Access through automated means (bots, scrapers)</li>
+                    <li>❌ Attempt unauthorized access to systems</li>
+                </ul>
+
+                <h3>3. Recipe Data and Content</h3>
+                <p>Recipe data is provided by <strong>Spoonacular API</strong> and other third-party sources. RecipeHub:</p>
+                <ul>
+                    <li>Does not create or own most recipe content</li>
+                    <li>Does not guarantee accuracy or safety of recipes</li>
+                    <li>Is not responsible for recipe outcomes or dietary issues</li>
+                </ul>
+
+                <h3>4. Prohibited Activities</h3>
+                <p>You agree NOT to use RecipeHub to:</p>
+                <ul>
+                    <li>❌ Violate any laws or infringe intellectual property</li>
+                    <li>❌ Post offensive, abusive, or harmful content</li>
+                    <li>❌ Overload servers or bypass security measures</li>
+                    <li>❌ Distribute malware or harmful code</li>
+                </ul>
+
+                <h3>5. Disclaimers</h3>
+                
+                <div class="warning">
+                    <strong>⚠️ IMPORTANT HEALTH DISCLAIMER</strong><br><br>
+                    <strong>RecipeHub is provided "AS IS" without any warranties.</strong> We do NOT guarantee:
+                    <ul>
+                        <li>Accuracy of recipes, measurements, or nutritional info</li>
+                        <li>Safety for food allergies or dietary restrictions</li>
+                        <li>Cooking outcomes or results</li>
+                    </ul>
+                    <strong>Always check ingredients for allergens!</strong> Consult healthcare professionals for dietary advice.
+                </div>
+
+                <h3>6. Limitation of Liability</h3>
+                <p><strong>TO THE MAXIMUM EXTENT PERMITTED BY LAW:</strong></p>
+                <p>RecipeHub is NOT liable for:</p>
+                <ul>
+                    <li>Indirect, incidental, or consequential damages</li>
+                    <li>Loss of profits, data, or business opportunities</li>
+                    <li>Damages from recipe outcomes or dietary issues</li>
+                    <li>Service interruptions or data loss</li>
+                </ul>
+
+                <h3>7. Service Modifications</h3>
+                <p>We reserve the right to:</p>
+                <ul>
+                    <li>Modify, suspend, or discontinue features</li>
+                    <li>Change pricing or introduce paid features</li>
+                    <li>Update these Terms with notice</li>
+                </ul>
+
+                <h3>8. Termination</h3>
+                <p>We may terminate your access if you violate these Terms. You may stop using the app anytime by uninstalling it.</p>
+
+                <h3>9. App Permissions</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Permission</th>
+                            <th>Purpose</th>
+                            <th>Required?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Internet</td>
+                            <td>Fetch recipe data from API</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Network State</td>
+                            <td>Check connectivity for offline mode</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Storage</td>
+                            <td>Cache recipes for offline access</td>
+                            <td>Optional</td>
+                        </tr>
+                        <tr>
+                            <td>Notifications</td>
+                            <td>Alert about new recipes</td>
+                            <td>Optional</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>10. Changes to Terms</h3>
+                <p>We may update these Terms. Continued use after changes means you accept the updated Terms.</p>
+
+                <div class="contact-box">
+                    <h4>📧 Contact Us About Terms</h4>
+                    <p><strong>Email:</strong> legal@recipehub.com</p>
+                    <p><strong>Response Time:</strong> Within 30 days</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT SECTION -->
+        <div id="contact" class="section">
+            <div class="card">
+                <h2>Contact Us</h2>
+                <p>We're here to help! If you have any questions, concerns, or feedback, please reach out:</p>
+
+                <div class="contact-box">
+                    <h3>📧 Email Support</h3>
+                    <p><strong>General Support:</strong> support@recipehub.com</p>
+                    <p><strong>Privacy Questions:</strong> privacy@recipehub.com</p>
+                    <p><strong>Legal Inquiries:</strong> legal@recipehub.com</p>
+                    <br>
+                    <p><strong>Response Time:</strong> We aim to respond within 30 days.</p>
+                </div>
+
+                <div class="contact-box" style="background: #F0FFF4; border-color: #4CAF50;">
+                    <h3>📍 Mailing Address</h3>
+                    <p><strong>RecipeHub</strong><br>
+                    [Your Company Name]<br>
+                    [Your Address]<br>
+                    [City, Country, Postal Code]</p>
+                </div>
+
+                <h3>What Can We Help With?</h3>
+                <ul>
+                    <li>🐛 <strong>Technical Issues:</strong> App crashes, bugs, or performance problems</li>
+                    <li>🔒 <strong>Privacy Concerns:</strong> Data deletion requests, privacy questions</li>
+                    <li>💡 <strong>Feature Requests:</strong> Suggestions for new features</li>
+                    <li>📖 <strong>Recipe Issues:</strong> Incorrect recipe data or broken links</li>
+                    <li>⚖️ <strong>Legal Questions:</strong> Terms, licensing, copyright issues</li>
+                </ul>
+
+                <h3>Before Contacting Support</h3>
+                <p>Please check if your issue can be resolved by:</p>
+                <ul>
+                    <li>Updating to the latest version of the app</li>
+                    <li>Clearing app cache and data</li>
+                    <li>Checking your internet connection</li>
+                    <li>Restarting your device</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><strong>© 2025 RecipeHub. All rights reserved.</strong></p>
+        <p>Made with ❤️ for food lovers everywhere</p>
+        <p>
+            <a href="#privacy" onclick="showSection('privacy')">Privacy Policy</a> | 
+            <a href="#terms" onclick="showSection('terms')">Terms of Service</a> | 
+            <a href="#contact" onclick="showSection('contact')">Contact</a>
+        </p>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Show selected section
+            document.getElementById(sectionId).classList.add('active');
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
